@@ -5,23 +5,25 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+   
 }
 
 .navegadores{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
+   
 }
-.contenedor_top_header{
-    display: flex;
-    width:100vw ;
-}
+
 .top_header {
     display: flex;
     align-items: center;
     padding: 5px 10%;
     background-color: black;
     width: 100vw;
+    overflow: hidden;
+    
     
     
 }
@@ -49,6 +51,7 @@ header {
     align-items: center;
     padding: 0px ;
     background-color: white;
+    width: 100%;
 
 }
 
@@ -91,7 +94,7 @@ body{
 }
 
 .foto_principal{
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     height: 100vh;
     position: relative;
@@ -144,12 +147,12 @@ body{
     font-family: "Roboto";
     font-size: small;
     display: block;
-    width: 60px;
+    width: 80px;
     background-color: black;
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 20px 30px 30px 180px;
     transition: all 0.3s ease 0s;
     text-align: center;
@@ -162,9 +165,10 @@ body{
 
 .footer_bottom{
     background-color: black;
-    width: 100vw;
+    /*width: 100vw;*/
     align-items: center;
     padding: 5px 0px 5px;   
+    width: 100%;
 }
 
 .footer_info{
@@ -346,12 +350,8 @@ label{
     grid-row-start: span 2;
 }
 
-@media (max-width:600px){
+@media (max-width:650px){
     
-    .contenedor_top_header{
-        display: flex;
-        width:100vw ;
-    }
     .top_header{
         justify-content:center; 
         width: 100vw;  
