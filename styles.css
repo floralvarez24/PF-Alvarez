@@ -365,7 +365,7 @@ label{
         font-size: 24px;
         padding-right: 20px;
     }
-    .fa-bars:hover + .nav_links{
+    .fa-bars:hover + .nav_links, .fa-bars:focus + .nav_links {
         right: 0;
     }
      header{
