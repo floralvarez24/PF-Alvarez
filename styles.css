@@ -57,7 +57,7 @@ header {
 
 .logo{
     cursor: pointer;
-    width: 150px;
+    width: 200px;
 }
 
 .nav_links{
@@ -373,7 +373,7 @@ label{
         width: 100vw;
      }
      .logo{
-        width: 100px;
+        width: 200px;
      }
 
    .nav_links {  
