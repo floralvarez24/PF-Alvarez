@@ -217,7 +217,7 @@ body{
 .bio{
     height: auto;
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 20px;
     color: rgb(65, 62, 62);
     margin: 120px 150px 0px 150px;
     line-height: 20px;
@@ -514,13 +514,13 @@ label{
 
 .texto_inicial{
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 18px;
     color: rgb(65, 62, 62);
     font-weight: bold;
 }
 .texto_normal{
     font-family: "Montserrat";
-    font-size: 12px;  
+    font-size: 16px;  
 }
 
 .footer_bottom_bt{
