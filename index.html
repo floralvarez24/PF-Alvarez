@@ -7,6 +7,7 @@
     <title>Inicio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon2.JPG">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bf0c6640b8.js" crossorigin="anonymous"></script>
     
 </head>
@@ -40,7 +41,7 @@
         <div>
             <img class="foto_principal" src="./assets/img/IMG_7737.JPG" alt="foto michel">
         </div>
-        <div class="reproductor_como_siempre"> 
+        <div class="reproductor_como_siempre"  data-aos="fade-up" data-aos-duration="3000"> 
             <div><h2>Escucha ahora en Spotify...</h2> <br>
                 <iframe class="sp_como_siempre" style="border-radius:12px" src="https://open.spotify.com/embed/album/4kM4B6RavQFuCXaRyrXtZQ?utm_source=generator" width="400px" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
@@ -63,5 +64,9 @@
                 <div class="footer_info"> <h5>Michel Álvarez - 2022</h5></div>
             </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

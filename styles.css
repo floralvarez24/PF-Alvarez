@@ -345,17 +345,20 @@ label{
 }
 
 #boton{
-    background-color: black;
+    background-image: linear-gradient(to left, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%);
     color: white;
     width: 50px;
     font-size: 14px;
     padding-right: 60px;
     border-radius: 10px;
+    transition: 0.6s;
 }
 
-#boton:hover{
-    color: gray;
+
+#boton:hover{    
     cursor: pointer;
+    background-image: linear-gradient(to right, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%);
+   
 }
 
 .gallery_container{
@@ -420,9 +423,11 @@ label{
         color: black;
         font-size: 24px;
         padding-right: 20px;
+        
     }
     .fa-bars:hover + .nav_links, .fa-bars:focus + .nav_links {
         right: 0;
+
     }
      header{
         height: 80px;
