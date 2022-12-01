@@ -29,7 +29,7 @@
 .menu {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: black;  
 }
 header {
@@ -371,7 +371,6 @@ label{
      }
 
    .nav_links {  
-
         right: -250px;
         flex-direction: column;
         background-color: white;
@@ -386,7 +385,7 @@ label{
     }
 
     li.menu {
-        font-size: 12px;
+        font-size: 18px;
         padding-bottom: 10px;
         padding-top: 10px;  
     }
