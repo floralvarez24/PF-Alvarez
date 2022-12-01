@@ -200,14 +200,15 @@ body{
 .bio{
     height: auto;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(65, 62, 62);
     margin: 120px 150px 0px 150px;
     line-height: 20px;     
 }
 span{
+    font-size: 18px;
     color: black;
-    font-size: 15px;
+    font-weight: bold;
 }
 .foto1{
     float: right;
@@ -263,13 +264,16 @@ span{
     margin-left: 180px;  
 }
 .formulario{
-   width: 310px;
+   width: 500px;
     margin: auto;
     background: rgba(0,0,0,0.4);
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 7px;
     margin-bottom: 50px;
+    margin-top: 120px;
+    -webkit-box-shadow: 5px 5px 16px 5px #000000; 
+    box-shadow: 5px 5px 16px 5px #000000;
 }
 input, textarea{
     width: 100%;
@@ -451,6 +455,9 @@ label{
     .gallery_item:nth-child(3){
         grid-row-start: span 2;
     }
+    .formulario{
+        width: 80vw;
+    }
 }
 
 @media (max-width:450px){
@@ -469,38 +476,8 @@ label{
 }
 
 
-/* ESTILOS PARA BOOTSTRAP*/
-.container{
-    position: relative;
-    top: 130px;
-}
 
-.texto_inicial{
-    font-family: "Montserrat";
-    font-size: 16px;
-    color: rgb(65, 62, 62);
-    font-weight: bold;
-}
-.texto_normal{
-    font-family: "Montserrat";
-    font-size: 16px;  
-}
 
-.footer_bottom_bt{
-    position: relative;
-    top: 120px;
-    background-color: black;
-    align-items: center;
-    padding: 5px 0px 5px;   
-    width: 100%;   
-}
-.foto1_bt{
-    width: 200px;
-}
-.red_bt{
-    list-style-type: none;
-    margin-left: 20px;
-}
 
 
 
