@@ -1,0 +1,51 @@
+@import "variables";
+main{
+    .contenedor_discografia{
+        display: flex;
+        margin-top: 120px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;  
+        h2{
+            font-family: $fuentePrincipal;
+            font-weight: 600;
+            font-size: 18px;     
+        }
+        .mientras_llueve,.como_siempre{
+            width: 350px;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .tapa_mientras_llueve, .tapa_como_siempre{
+                width: 300px;
+            }
+        }
+    }
+    .singles{
+        font-family: $fuentePrincipal;
+        font-weight: 600;
+        font-size: 18px;  
+        margin-left: 180px;  
+    }
+    .contenedor_singles{
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;    
+        margin-bottom: 10px;
+        .barrio , .siembra, .a_la_uruguaya, .donde_siempre{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    } 
+}
+
+

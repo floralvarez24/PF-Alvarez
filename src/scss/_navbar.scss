@@ -1,0 +1,57 @@
+@import "variables";
+.navegadores{
+    position: fixed;
+    width: 100%;
+    z-index: 2;  
+    .top_header {
+        display: flex;
+        align-items: center;
+        padding: 5px 10%;
+        background-color: black;
+        width: 100vw;
+        overflow: hidden; 
+        a{
+            color: white; 
+            width: 100vw; 
+        }    
+    }
+    .logo{
+        cursor: pointer;
+        width: 200px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px ;
+        background-color: white;
+        width: 100%;
+        .fa-bars{
+            visibility: hidden;
+        }
+        .nav_links{
+            list-style: none;
+            text-decoration: none;
+            display: flex; 
+            .menu {
+                font-family: $fuentePrincipal;
+                font-weight: 600;
+                font-size: 18px;
+                color: black; 
+                display: inline-block;
+                padding: 0px 20px; 
+                a{
+                    transition: all 0.3s ease ease-in-out;
+                    border: 1px solid transparent;
+                    color: black;
+                    text-decoration: none; 
+                        &:hover{
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;  
+                        } 
+                }
+            }  
+        }
+    }
+}
