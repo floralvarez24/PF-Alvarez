@@ -41,6 +41,14 @@ body {
 .navegadores header nav .fa-bars {
   visibility: hidden;
 }
+@media (max-width: 650px) {
+  .navegadores header nav .fa-bars {
+    visibility: visible;
+    color: black;
+    font-size: 24px;
+    padding-right: 20px;
+  }
+}
 .navegadores header nav .nav_links {
   list-style: none;
   text-decoration: none;
@@ -406,12 +414,6 @@ main .contenedor_singles .barrio, main .contenedor_singles .siembra, main .conte
   }
   .fa-brands {
     padding: 0px 10px;
-  }
-  .navegadores header nav .fa-bars {
-    visibility: visible;
-    color: black;
-    font-size: 24px;
-    padding-right: 20px;
   }
   .fa-bars:hover + .nav_links, .fa-bars:focus + .nav_links {
     right: 0;
