@@ -38,15 +38,15 @@ body {
   background-color: white;
   width: 100%;
 }
-.navegadores header .fa-bars {
+.navegadores header nav .fa-bars {
   visibility: hidden;
 }
-.navegadores header .nav_links {
+.navegadores header nav .nav_links {
   list-style: none;
   text-decoration: none;
   display: flex;
 }
-.navegadores header .nav_links .menu {
+.navegadores header nav .nav_links .menu {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -54,13 +54,13 @@ body {
   display: inline-block;
   padding: 0px 20px;
 }
-.navegadores header .nav_links .menu a {
+.navegadores header nav .nav_links .menu a {
   transition: all 0.3s ease ease-in-out;
   border: 1px solid transparent;
   color: black;
   text-decoration: none;
 }
-.navegadores header .nav_links .menu a:hover {
+.navegadores header nav .nav_links .menu a:hover {
   border: 1px solid gray;
   border-radius: 10px;
   padding: 5px;
@@ -407,7 +407,7 @@ main .contenedor_singles .barrio, main .contenedor_singles .siembra, main .conte
   .fa-brands {
     padding: 0px 10px;
   }
-  .fa-bars {
+  .navegadores header nav .fa-bars {
     visibility: visible;
     color: black;
     font-size: 24px;
