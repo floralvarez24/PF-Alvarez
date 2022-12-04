@@ -466,6 +466,7 @@ main .contenedor_singles .barrio, main .contenedor_singles .siembra, main .conte
   border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  border-radius: 10px;
 }
 .formulario textarea {
   min-height: 100px;
@@ -474,7 +475,8 @@ main .contenedor_singles .barrio, main .contenedor_singles .siembra, main .conte
 }
 .formulario label {
   font-size: 17px;
-  font-style: italic;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .formulario #boton {
   background-image: linear-gradient(to left, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%);
