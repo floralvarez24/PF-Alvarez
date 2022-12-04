@@ -1,12 +1,11 @@
+@import "mixins";
 .banner{
     display: flex;
     text-align: right;
     position: relative;
-    width: 100%;
-    height: 300px;
+    @include sizes(100%,300px);
     top: 100px;
-    justify-content: center; 
-    align-items: center;
+    @include alineado(center,center);
     background: url(../../assets/img/fotobanner.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -21,4 +20,8 @@
     @media(min-width:900px){
         top:80px; 
     }
+    @media (max-width:650px){
+        height: 100px;
+        font-size: large;   
+    } 
 }

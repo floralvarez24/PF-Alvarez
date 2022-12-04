@@ -1,9 +1,9 @@
 @import "variables";
+@import "mixins";
 main{
     .contenedor_discografia{
-        display: flex;
+        @include flex(flex,row);
         margin-top: 120px;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;  
         h2{
@@ -12,38 +12,51 @@ main{
             font-size: 18px;     
         }
         .mientras_llueve,.como_siempre{
-            width: 350px;  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex,column); 
+            @include alineado(center,center);   
             text-align: center;
+            width: 350px; 
             .tapa_mientras_llueve, .tapa_como_siempre{
                 width: 300px;
             }
+            .sp_mientras_llueve, .sp_como_siempre{
+                @media (max-width:650px){
+                    @include sizes(100vw,380px); 
+                }
+            }
+        }
+        .como_siempre{
+            @media (max-width:650px){
+                margin-top: 10px;  
+            } 
         }
     }
     .singles{
         font-family: $fuentePrincipal;
         font-weight: 600;
         font-size: 18px;  
-        margin-left: 180px;  
+        margin-left: 180px; 
+        @media (max-width:650px){
+            margin-left: 20px;    
+        }
     }
     .contenedor_singles{
-        display: flex;
+        @include flex(flex,row);
+        @include alineado(center,center);   
         margin: auto;
         margin-top: 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: center;    
+        flex-wrap: wrap; 
         margin-bottom: 10px;
         .barrio , .siembra, .a_la_uruguaya, .donde_siempre{
+            @include flex(flex,column);
+            @include alineado(center,center);   
             width: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @media (max-width:650px){
+                @include sizes(100vw,120px); 
+            }
+        }
+        @media (max-width:650px){
+            margin-bottom: 20px;  
         }
     } 
 }

@@ -30,6 +30,21 @@
             } 
         }
     }
-      
+    .p_ppal{
+        @media (max-width:800px){
+            text-align:center;    
+        }  
+    }
+    #foto{
+        @media (max-width:800px){
+            display: flex;
+            justify-content: center;     
+        }  
+    }
+    @media (max-width:800px){
+        display: block;
+        margin: 110px 10px 10px 10px;
+        text-align:justify;
+    }       
 }
 

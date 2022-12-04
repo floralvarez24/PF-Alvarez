@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 .navegadores{
     position: fixed;
     width: 100%;
@@ -13,19 +14,33 @@
         a{
             color: white; 
             width: 100vw; 
-        }    
+        }  
+        @media (max-width:650px){
+            justify-content:center; 
+            width: 100vw;
+        }
+        .fa-brands{
+            @media (max-width:650px){
+            padding: 0px 10px;
+            }
+         }
     }
     .logo{
         cursor: pointer;
         width: 200px;
+        @media (max-width:650px){
+            width: 200px;
+        }
     }
     header {
+        @include alineado(space-between,center);  
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 0px ;
         background-color: white;
         width: 100%;
+            @media (max-width:650px){
+                @include sizes(100vw,80px);
+            }
         nav{
             .fa-bars{ 
                 visibility: hidden; 
@@ -34,6 +49,9 @@
                 color: black;
                 font-size: 24px;
                 padding-right: 20px;  
+                    &:hover +.nav_links, &:focus + .nav_links {
+                        right: 0;
+                    }
                 }
             }
             .nav_links{
@@ -57,10 +75,26 @@
                             border-radius: 10px;
                             padding: 5px;  
                             } 
+                        }
+                        @media (max-width:650px){
+                            font-size: 18px;
+                            padding-bottom: 10px;
+                            padding-top: 10px; 
+                        }
                     }
-                }     
+                @media (max-width:650px){ 
+                    right: -250px;
+                    flex-direction: column;
+                    background-color: white;
+                    width: 20wh; 
+                    text-align: right;
+                    position: fixed;
+                    transition: 0.2s;
+                    &:hover {
+                        right: 0px;
+                    }
+                }
             }
-     
         }
-}
+    }
 }

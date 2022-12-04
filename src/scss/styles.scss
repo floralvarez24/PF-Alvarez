@@ -1,141 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 @import "reset";
+@import "variables";
+@import "extends";
+@import "mixins";
 @import "navbar";
-@import "index-contenido";
 @import "footer";
 @import "banner";
+@import "index-contenido";
 @import "bio-contenido";
 @import "discografia-contenido";
 @import "contacto-contenido";
-@import "variables";
 @import "galeria-contenido";
-@import "extends";
 
-@media (max-width:650px){
-    
-   .top_header{
-        justify-content:center; 
-        width: 100vw;  
-    }
-     .fa-brands{
-        padding: 0px 10px;
-     }
-
-    .fa-bars:hover + .nav_links, .fa-bars:focus + .nav_links {
-        right: 0;
-    }
-     header{
-        height: 80px;
-        width: 100vw;
-     }
-     .logo{
-        width: 200px;
-     }
-
-   .nav_links {  
-        right: -250px;
-        flex-direction: column;
-        background-color: white;
-        width: 20wh; 
-        text-align: right;
-        position: fixed;
-        transition: 0.2s;
-
-    } 
-    .nav_links:hover{
-        right: 0px;
-    }
-
-    li.menu {
-        font-size: 18px;
-        padding-bottom: 10px;
-        padding-top: 10px;  
-    }
-
-    .foto_principal{
-        top: 80px;
-    }
-
-    .reproductor_como_siempre{
-        width: 100vw;
-        flex-direction: column;
-        margin-left: 0px;
-        text-align: center;
-     
-     }
-     .sp_como_siempre{
-        width:100vw;
-        height:380px;   
-     }
-     
-    
-     .contenedor_imagen_para_video{
-        flex-direction: column;
-    }
-    .imagen_para_video{
-        width: 100vw;
-       margin-left: 0px;
-       margin-right: 0px;
-    }
- 
-    .foto_pdu{
-        width: 100vw;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-   
-    .banner{
-        height: 100px;
-        font-size: large;
-    
-    }
-    .como_siempre{
-       margin-top: 10px;
-    }
-    .barrio , .siembra, .a_la_uruguaya, .donde_siempre{
-      height: 120px;  
-      width: 100vw;
-    }
-    .sp_mientras_llueve{
-        width: 100vw;
-    }
-    .contenedor_singles{   
-        margin-bottom: 20px;
-    }
-    .singles{ 
-        margin-left: 20px;
-    }
-    .gallery_container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-    }
-    .gallery_item:nth-child(3){
-        grid-row-start: span 2;
-    }
-    .formulario{
-        width: 80vw;
-    }
-    
-}
-
-@media (max-width:450px){
-    .gallery_container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 200px;
-    } 
-    .gallery_item:nth-child(7),.gallery_item:nth-child(8){
-        grid-column-start: span 2;
-        grid-row-start:span 1 ;
-    }
-    .gallery_item:nth-child(9),.gallery_item:nth-child(10) {
-        grid-column-start: span 2;
-        grid-row-start:span 2 ;
-    }
-}
-
-@media (max-width:800px){
-    .bio{
-        display: block;
-        margin: 120px 10px 10px 10px;
-       }
-}

@@ -1,16 +1,18 @@
 @import "variables";
+@import "mixins";
 .index{
     .foto_principal{
-        width: 100%;
+        @include sizes(100%,100vh);
         object-fit: cover;
-        height: 100vh;
         position: relative;
         z-index: 1;
         top: 100px;
+        @media (max-width:650px){
+            top: 80px;
+        }
     }
     .reproductor_como_siempre{
-        display: flex;
-        flex-direction: row;
+        @include flex(flex,row);
         flex-wrap: wrap;
         justify-content:center;
         margin:100px 0px 0px;
@@ -22,11 +24,9 @@
             margin: 0px 20px;
             width: 500px;
                 .texto_index{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                    @include flex (flex,column);
+                    @include alineado(center,center);  
                     text-align: center;
-                    align-items: center;
                     h2{
                         @extend %h2-h3;  
                     }  
@@ -37,12 +37,16 @@
                 }
                 .foto_pdu{
                     padding: 0px 40px;
+                    @media (max-width:650px){
+                        width: 100vw;
+                        padding-left: 0px;
+                        padding-right: 0px;   
+                    }
                 } 
                 .boton{
                     display: flex;
                     margin-right: 0px;
-                    align-items: center;
-                    justify-content: center; 
+                    @include alineado(center,center);   
                         a{
                             font-family: $fuentePrincipal;
                             font-weight: 600;
@@ -63,6 +67,22 @@
                                 }
                         }   
                 }
+                @media (max-width:650px){
+                    width: 100vw;
+                    margin-left: 0px;
+                    margin-right: 0px;  
+                }
+        } 
+        @media (max-width:650px){
+            width: 100vw;
+            flex-direction: column;
+            margin-left: 0px;
+            text-align: center; 
+        } 
+        .sp_como_siempre{
+            @media (max-width:650px){
+                @include sizes (100vw,380px);
+            }
         } 
     }
 }

@@ -42,6 +42,9 @@
             background-image: linear-gradient(to right, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%); 
         }
     }
+    @media (max-width:650px){
+        width: 80vw;  
+    }
  }
 
  
